@@ -1,9 +1,13 @@
 package pong;
 
 import java.awt.Color;
+
 import jgame.GRootContainer;
 import jgame.Game;
 import jgame.ImageCache;
+
+import org.mrumrocks.pong.GameOverView;
+import org.mrumrocks.pong.PongGameView;
 
 public class Pong extends Game {
 	
@@ -18,7 +22,6 @@ public class Pong extends Game {
 	}
 	
 	public Pong(){
-		
 		GRootContainer root = new GRootContainer(Color.BLACK );
 		setRootContainer(root);
 		PongGameView pgv = new PongGameView();
@@ -37,7 +40,4 @@ public class Pong extends Game {
 //		These are all of the views for this game
 		MENU, GAME, GAME_OVER, INSTRUCTIONS,OTHER; 
 	}
-	
-	
-
 }
