@@ -9,8 +9,7 @@ public class PongPaddle extends GSprite {
 	public PongPaddle(ControlScheme cs) {
 		super(ImageCache.forClass(Pong.class).get("paddle.png"));
 	
-		KeyboardLocationController klc = new KeyboardLocationController(
-				cs, 10);
+		KeyboardLocationController klc = new KeyboardLocationController(cs, 10);
 		addController(klc);
 		klc.setHorizontalAllowed(false);
 		

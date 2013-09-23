@@ -16,11 +16,8 @@ public class Pong extends Game{
 	 * @param args
 	 */
 	public static void main(String args[]){
-		//create a root container
-		//assign the root container with setRootContainer
-		//set up the components (paddles, etc.)
+		
 		ImageCache.create(Pong.class, "/pong/rsc/");
-		//TODO Auto-generated method stub
 		Pong pongGame = new Pong();
 		pongGame.startGame("Pong");
 	}
@@ -32,6 +29,7 @@ public class Pong extends Game{
 		
 		PongGameView gameView = new PongGameView();
 		root.addView(View.GAME, gameView);
+		root.addView(View.GAME_OVER, gameView);
 		
 		GameOverView gameOverView = new GameOverView();
 		root.addView(View.GAME_OVER, gameOverView);
