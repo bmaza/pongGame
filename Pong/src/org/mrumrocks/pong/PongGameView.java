@@ -35,8 +35,15 @@ public class PongGameView extends GContainer {
 
 		        // Is it empty?
 		        boolean noPucksLeft = pucks.isEmpty();
+		        if(noPucksLeft)
+		        {
+		        	//void setCurrentGameView(java.lang.Object viewName)
+		        	context.setCurrentGameView(Pong.View.GAME_OVER);
+		        }
+			    void addListener(fl);
 		    }
+		    //void addListener(fl);
 		};
 	}
 }
-                                                                                                                                                                                   
+                                                                                                                                                                               
